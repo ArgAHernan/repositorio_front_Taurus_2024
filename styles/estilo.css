@@ -1,0 +1,1275 @@
+/*color de fondo del body - gradiente*/
+html {
+    background-image: linear-gradient(#f0ff42, #82cd47);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* *************************************************************** */
+/* --HEADER--*/
+
+#id-header {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+/* --CONFIGURACION DEL CONTENEDOR NAVBAR-- */
+#id-header .nav-section .navbar {
+    overflow: hidden;
+    background-color: #82cd47;
+    height: 50px;
+    z-index: 2000;
+}
+
+/*CONFIGURACION DEL MENU "NOTICIAS"  */
+#id-header .nav-section .navbar #id-noticias {
+    float: inline-end;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/*CONFIGURACION DEL MENU "DESTACADOS"  */
+#id-header .nav-section .navbar #id-destacados {
+    float: inline-end;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*CONFIGURACION DE BOTONES DE MENU (PRODUCTOS-COMPRAR-INSTITUCIONAL)*/
+.dropdown,
+.dropdown1,
+.dropdown2 {
+    float: left;
+    overflow: hidden;
+}
+
+
+/*PRODUCTOS*/
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/*COMPRAS*/
+.dropdown1 .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/*INSTITUCIONAL*/
+.dropdown2 .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/*HOVER MENU PRODUCTOS*/
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #317d31;
+}
+
+/*HOVER MENU COMPRAS*/
+.navbar a:hover,
+.dropdown1:hover .dropbtn {
+    background-color: #317d31;
+}
+
+/*HOVER MENU INSTITUCIONAL*/
+.navbar a:hover,
+.dropdown2:hover .dropbtn {
+    background-color: #317d31;
+}
+
+/*MENU DESPLEGABLE PRODUCTOS*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #82cd47;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/*MENU DESPLEGABLE COMPRAS*/
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #82cd47;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/*MENU DESPLEGABLE INSTITUCIONAL*/
+.dropdown2-content {
+    display: none;
+    position: absolute;
+    background-color: #82cd47;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/*CONFIGURACION DEL SUMBMENU PRODUCTOS*/
+.dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/*CONFIGURACION DEL SUMBMENU COMPRAS*/
+.dropdown1-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/*CONFIGURACION DEL SUMBMENU INSTITUCIONAL*/
+.dropdown2-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/*HOVER SOBRE SUBMENUS DE PRODUCTOS*/
+.dropdown-content a:hover {
+    background-color: #379237;
+}
+
+/*HOVER SOBRE SUBMENUS DE COMPRAS*/
+.dropdown1-content a:hover {
+    background-color: #379237;
+}
+
+/*HOVER SOBRE SUBMENUS DE INSTITUCIONAL*/
+.dropdown2-content a:hover {
+    background-color: #379237;
+}
+
+/*VENTANA DESPLEGABLE DE SUBMENU PRODUCTOS*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*VENTANA DESPLEGABLE DE SUBMENU COMPRAS*/
+.dropdown1:hover .dropdown1-content {
+    display: block;
+}
+
+/*VENTANA DESPLEGABLE DE SUBMENU INSTITUCIONAL*/
+.dropdown2:hover .dropdown2-content {
+    display: block;
+}
+
+/*    /HEADER     */
+/* *************************************************************** */
+/*      MAIN      */
+
+/*CARRUSEL*/
+/*CONTENEDOR DEL CARRUSEL*/
+.container-carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #000000;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+   border-radius: 15px; 
+   overflow: hidden;
+   margin-top: 10px;
+}
+
+/*ID DEL LOGO TAURUS */
+#img-taurus {
+    position: absolute;
+    display:flexbox;
+}
+
+/*CONFIGURACION DEL LOGOTIPO*/
+#img-taurus .img-taurus {
+    position: relative;
+    height: 150px;
+    width: 120px;
+    z-index: 2;
+    top: 10px;
+    left: 20px;
+    z-index: 5;
+}
+
+/*CONFIGURACION DEL CONTENEDOR DE IMAGENES (6img)=600%   */
+.carrusel {
+    width: 600%;
+    height: 100%;
+    display: flex;
+    /* ******************************************************** */
+    /*          Animacion Automatica - DESHABILITADA -          */
+    /*animation: slide 24s infinite alternate ease-in-out;*/
+    /* ******************************************************** */
+}
+
+/*SECCION QUE CONTIENE UNA IMAGEN*/
+.slider-section {
+    width: calc(100% / 6);
+    height: 100%;
+}
+
+/*CONFIGURACION DE CADA IMAGEN*/
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/*CONFIGURACION DE LOS BOTONES PARA PASAR DE IMAGEN MANUALMENTE (<)  (>)  */
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 10%;
+    padding: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    color: #ffffff;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+/*EFECTO HOVER SOBRE LOS BOTONES DE MOVIMIENTO MANUAL DE IMAGENES*/
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #4b84f5d4;
+    color: #fff;
+}
+
+/*SEPARACION DEL CONTENEDOR*/
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+/******************************** ANIMACION AUTOMATICA CARRUSEL ************************************************************/
+/* animacion automatica - DESHABILITADA - SI LO QUIEREN PROBAR, HABILITAR Y HABILITAR EL ANIMATION DEL CARRUSEL*/
+/*NOTA: SI SE HABILITA EL SLIDE AUTOMATICO DEBEREMOS DESHABILITAR EL SLIDE MANUAL O NO USARLO PQ GENERA ERRORES VISUALES*/
+
+/*@keyframes slide {
+    0% {margin-left: 0%;}
+    12% {margin-left: 0%;}
+
+    15% {margin-left: -100%;}
+    27% {margin-left: -100%;}
+
+    30% {margin-left: -200%;}
+    42% {margin-left: -200%;}
+
+    45% {margin-left: -300%;}
+    57% {margin-left: -300%;}
+
+    60% {margin-left: -400%;}
+    72% {margin-left: -400%;}
+
+    75% {margin-left: -500%;}
+    95% {margin-left: -500%;}
+}*/
+/****************************************************************************************************/
+
+
+/* ***************************** MAIN ********************************** */
+
+/******** h1 **********/
+
+
+.class__div__h1 {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #000000;
+    margin-top: 20px;
+}
+
+.class__div__h1 .class__h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: #82cd47;
+    transition-property: font-size, text-shadow;
+    transition-duration: 1.5s;
+    transition-timing-function: center,ease-in-out;
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+    text-shadow: 2px 2px 8px #f0ff42;
+    
+}
+
+.class__h1:hover {
+    font-size: 2.5em;
+    text-shadow: 8px 8px 20px #f0ff42;
+}
+
+
+
+/******* h2 *******/
+
+
+/*H2 - SUBTITULOS (DESTACADOS Y NOTICIAS)*/
+.h2-subtitulo {
+    text-align: left;
+    background-color: #379237;
+    color: #f0ff42;;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px; 
+    text-shadow: 2px 2px #82cd47;
+    margin-top: 40px;
+}
+
+/*---PRODUCTOS DESTACADOS---*/
+
+/* CONTENEDOR GENERAL */
+.productos-destacados {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+/*CONTENEDOR VERDE-1*/
+.productos-destacados .cont-prod1 {
+    height: 400px;
+    width: 24%;
+    background-color: #82cd47;
+    margin-left: 0px;
+    align-items: center;
+}
+
+/*CONTENEDOR VERDE-2*/
+.productos-destacados .cont-prod2 {
+    height: 400px;
+    width: 24%;
+    background-color: #82cd47;
+    margin-left: 10px;
+    align-items: center;
+}
+
+/*CONTENEDOR VERDE-3*/
+.productos-destacados .cont-prod3 {
+    height: 400px;
+    width: 24%;
+    background-color: #82cd47;
+    margin-left: 10px;
+    align-items: center;
+}
+
+/*CONTENEDOR VERDE-4*/
+.productos-destacados .cont-prod4 {
+    height: 400px;
+    width: 24%;
+    background-color: #82cd47;
+    margin-left: 10px;
+    align-items: center;
+}
+
+/*IMAGEN PROD-DESTACADO-1*/
+.cont-prod1 #id-img-prod-1 {
+    height: 50%;
+    width: 92%;
+    position: relative;
+    align-items: center;
+    margin: 15px;
+    transition-property: height, width, margin;
+    transition-duration: 0.5s;
+    transition-timing-function: center,ease-in-out;
+}
+
+#id-img-prod-1:hover {
+    width: 95%;
+    height: 52%;
+    margin: 10px;
+}
+
+/*IMAGEN PROD-DESTACADO-2*/
+.cont-prod2 #id-img-prod-2 {
+    height: 50%;
+    width: 92%;
+    position: relative;
+    align-items: center;
+    margin: 15px;
+    transition-property: height, width, margin;
+    transition-duration: 0.5s;
+    transition-timing-function: center,ease-in-out;
+}
+
+
+#id-img-prod-2:hover {
+    width: 95%;
+    height: 52%;
+    margin: 10px;
+}
+
+/*IMAGEN PROD-DESTACADO-3*/
+.cont-prod3 #id-img-prod-3 {
+    height: 50%;
+    width: 92%;
+    position: relative;
+    align-items: center;
+    margin: 15px;
+    transition-property: height, width, margin;
+    transition-duration: 0.5s;
+    transition-timing-function: center,ease-in-out;
+}
+
+
+#id-img-prod-3:hover {
+    width: 95%;
+    height: 52%;
+    margin: 10px;
+}
+
+/*IMAGEN PROD-DESTACADO-4*/
+.cont-prod4 #id-img-prod-4 {
+    height: 50%;
+    width: 92%;
+    position: relative;
+    align-items: center;
+    margin: 15px;
+    transition-property: height, width, margin;
+    transition-duration: 0.5s;
+    transition-timing-function: center,ease-in-out;
+}
+
+#id-img-prod-4:hover {
+    width: 95%;
+    height: 52%;
+    margin: 10px;
+}
+
+/*PARRAFO PROD-DESTACADO-1*/
+.productos-destacados .cont-prod1 .p-prod1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #f0ff42;
+    padding-left: 5px;
+}
+
+/*PARRAFO PROD-DESTACADO-2*/
+.productos-destacados .cont-prod2 .p-prod2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #f0ff42;
+    padding-left: 5px;
+
+}
+
+/*PARRAFO PROD-DESTACADO-3*/
+.productos-destacados .cont-prod3 .p-prod3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #f0ff42;
+    padding-left: 5px;
+}
+
+/*PARRAFO PROD-DESTACADO-4*/
+.productos-destacados .cont-prod4 .p-prod4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #f0ff42;
+    padding-left: 5px;
+}
+
+/*---NOTICIAS---*/
+#Listado__imgNot {
+    margin-top: 40px;   
+}
+
+/*IMAGEN DE NOTICIA 1*/
+#id-not-1 {
+    height: 50%;
+    width: 100%;   
+}
+/*IMAGEN DE NOTICIA 2*/
+#id-not-2 {
+    height: 50%;
+    width: 100%
+}
+
+/*IMAGEN DE NOTICIA 3*/
+#id-not-3 {
+    height: 50%;
+    width: 100%
+}
+
+/*IMAGEN DE NOTICIA 4*/
+#id-not-4 {
+    height: 50%;
+    width: 100%
+}
+
+/*ESTILO DE HOVER SOBRE IMG DE NOTICIA*/
+body,
+.ul-noticias,
+figure {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.ul-noticias {
+    list-style: none;
+    display: flex;
+}
+
+.ul-noticias li {
+    width: 100%;
+}
+
+.ul-noticias li figure {
+    padding: 5px;
+    position: relative;
+}
+
+.ul-noticias li figure:hover figcaption {
+    display: block;
+    cursor: pointer;
+}
+
+.ul-noticias li figcaption {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, .7);
+    text-align: center;
+    padding-top: 5px;
+}
+
+.ul-noticias li a {
+    font: 20px/30px Verdana;
+    color: white;
+    text-decoration: none;
+}
+
+.ul-noticias li figcaption .text__p {
+    padding: 30px 5px;
+}
+
+/*--FOOTER--*******************************************************/
+
+#id-footer {
+    background-color: #525151;
+    padding: 30px 0;
+    margin-top: 30px;
+    
+}
+
+.h3-footer {
+    padding-top: 0px;
+    padding-left: 100px;
+    font-size: 20px;
+    font-weight: 500px;
+    color: #d2d6d3;
+    border-bottom: 5px solid #0eac36;
+    padding-bottom: 10px;
+    display: inline;
+}
+
+.footer-subtitle h4 {
+    font-size: 16px;
+    color: #d2d6d3;
+    margin-top: 20px;
+    padding-left: 100px;
+}
+
+.footer-subtitle h5 {
+    font-size: 16px;
+    color: #d2d6d3;
+    margin-top: 10px;
+    padding-left: 100px;
+    border-bottom: 2px solid #0eac36;
+    padding-bottom: 10px;
+    /*display: inline;*/
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-container-links {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-container-links h4 {
+    color: antiquewhite;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0eac36;
+    padding-bottom: 5px;
+    display: inline-flex;
+}
+
+.footer-container-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+    font-weight: 800px;
+}
+
+.footer-container-links ul li a:hover {
+    color: #82cd47;
+    padding-left: 6px;
+}
+
+.social-links a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.social-links a:hover {
+    background-color: #82cd47;
+}
+
+.footer__separator {
+    border-bottom: 2px solid #0eac36;
+}
+
+#id-menu-pie {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #0eac36;
+}
+
+.span__container {
+    position: relative;
+    display: inline-block;
+    padding-left: 0px;
+    padding-top: 20px;
+    font-size: 0.7em;
+    color: #c7c7c7;
+}
+
+.span__container:hover {
+    font-size: 0.7em;
+    font-weight: 500;
+    color: #0eac36;
+}
+
+.span__container1 {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 100px;
+    padding-top: 20px;
+    font-size: 0.7em;
+    color: #c7c7c7;
+}
+
+.span__container1:hover {
+    font-size: 0.7em;
+    font-weight: 500;
+    color: #0eac36;
+}
+
+.span__separator {
+    color: #c7c7c7;
+}
+
+.h5__derechos-desarrollo {
+    font-size: 0.7em;
+    color: #c7c7c7;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    font-weight: 50;
+    text-align: center !important;
+    padding-top: 0.6em;
+    position: relative;
+    display: inline-block;
+    padding-left: 550px;
+    
+}
+
+.link__G2 {
+    text-decoration: none;
+    color: #c7c7c7;
+    font-size: 0.7em;
+    align-items: center;
+}
+
+.link__G2:hover {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #0eac36;
+}
+
+/* *************************************************************************************** */
+
+/* PANTALLAS GRANDES */
+@media screen and (max-width:1920px) {
+    
+}
+
+/* ************************************************************************************** */
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+/*BARRA NAVEGADOR*/    
+
+#id-header .nav-section .navbar { 
+    width: 100%;
+    height: 30px;
+} 
+
+#id-header .nav-section .navbar #id-noticias {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 7px;
+}
+
+#id-header .nav-section .navbar #id-destacados {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.dropdown .dropbtn {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.dropdown1 .dropbtn {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 7px;;
+}
+
+.dropdown2 .dropbtn {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.dropdown-content {
+    min-width: 100px;
+}
+
+.submenu {
+    font-size: 0.8em;
+}
+
+/*CARRUSEL*/
+
+.container-carousel {
+    width: 98%;
+    height: 250px;
+    margin-left: 1%;
+}
+
+/*IMG TAURUS LOGO*/
+
+#img-taurus .img-taurus {
+    width: 70px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+/*H1*/
+
+.class__div__h1 {
+    width: 100%;
+    height: 100px;
+    font-size: 0.7em;
+}
+
+.class__div__h1:hover {
+    font-size: 0.5em;
+}
+
+/*H2*/
+
+.h2-subtitulo {
+    width: 100%;
+    height: 50px;
+    padding-top: 8px;
+}
+
+/*PRODUCTOS*/
+
+.productos-destacados {
+    width: 99%;
+    height: 250px;
+}
+
+.productos-destacados .cont-prod1 {
+    height: 250px;
+}
+
+.productos-destacados .cont-prod2 {
+    height: 250px;
+    margin-left: 5px;
+}
+
+.productos-destacados .cont-prod3 {
+    height: 250px;
+    margin-left: 5px;
+}
+
+.productos-destacados .cont-prod4 {
+    height: 250px;
+    margin-left: 5px;
+}
+
+.cont-prod1 #id-img-prod-1 {
+    margin-left: 7px;
+    height: 100px;
+}
+
+.cont-prod2 #id-img-prod-2 {
+    margin-left: 7px;
+    height:100px;
+}
+
+.cont-prod3 #id-img-prod-3 {
+    margin-left: 7px;
+    height: 100px;
+}
+
+.cont-prod4 #id-img-prod-4 {
+    margin-left: 7px;
+    height: 100px;
+}
+
+.productos-destacados .cont-prod1 .p-prod1 {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.productos-destacados .cont-prod2 .p-prod2 {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.productos-destacados .cont-prod3 .p-prod3 {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.productos-destacados .cont-prod4 .p-prod4 {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* NOTICIAS */
+
+.productos-destacados .cont-prod1 .p-prod1 {
+    font-size: 1em;
+}
+
+/* FOOTER */
+
+.h3-footer {
+    font-size: 17px;
+} 
+
+.footer-container-links h4 {
+    font-size: 15px;
+}
+
+.footer-container-links ul li a {
+    font-size: 12px;
+}
+
+#id-menu-pie .span__container1 {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+#id-menu-pie .span__container {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.h5__derechos-desarrollo {
+    padding-left: 25%;
+}
+}
+/* ************************************************************************************** */
+/* CELULARES */
+@media screen and (max-width: 767px) {
+
+
+/*BARRA NAVEGADOR*/    
+
+#id-header .nav-section .navbar { 
+    width: 100%;
+    height: 50px;
+    align-content: center;
+    align-items: center;
+} 
+
+#id-header .nav-section .navbar #id-noticias {
+    font-size: 0.5em;
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 5px;
+    margin-left: 10px;
+    float: inline-start ;
+}
+
+#id-header .nav-section .navbar #id-destacados {
+    font-size: 0.5em;
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 5px;
+    float: inline-start ;
+}
+
+.dropdown .dropbtn {
+    font-size: 0.5em;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.dropdown1 .dropbtn {
+    font-size: 0.5em;
+    text-align: center;
+    padding-top: 7px;;
+}
+
+.dropdown2 .dropbtn {
+    font-size: 0.5em;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.dropdown-content {
+    min-width: 100px;
+}
+
+.dropdown2-content {
+    margin-left: -40px;
+}
+
+
+.submenu {
+    font-size: 0.8em;
+}
+
+/*CARRUSEL*/
+
+.container-carousel {
+    width: 98%;
+    height: 150px;
+    margin-left: 1%;
+}
+
+/*IMG TAURUS LOGO*/
+
+#img-taurus .img-taurus {
+    width: 45px;
+    height: 60px;
+    padding-top: 0px;
+}
+
+/*H1*/
+
+.class__div__h1 {
+    width: 100%;
+    height: 70px;
+    font-size: 0.5em;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.class__div__h1 .class__h1 {
+    padding-top: 20px;
+}
+
+.class__div__h1:hover {
+    font-size: 0.35em;
+}
+
+/*H2*/
+
+.h2-subtitulo {
+    width: 100%;
+    height: 50px;
+    padding-top: 6px;
+    font-size: 1em;
+    margin-top: 15px;
+    height: 40px;
+}
+
+/*PRODUCTOS*/
+
+.productos-destacados {
+    width: 99%;
+    height: 160px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.productos-destacados .cont-prod1 {
+    height: 160px;
+}
+
+.productos-destacados .cont-prod2 {
+    height: 160px;
+    margin-left: 5px;
+}
+
+.productos-destacados .cont-prod3 {
+    height: 160px;
+    margin-left: 5px;
+}
+
+.productos-destacados .cont-prod4 {
+    height: 160px;
+    margin-left: 5px;
+}
+
+.cont-prod1 #id-img-prod-1 {
+    margin-left: 3px;
+    margin-top: 3px;
+    height: 70px;
+}
+
+.cont-prod2 #id-img-prod-2 {
+    margin-left: 3px;
+    margin-top: 3px;
+    height:70px;
+}
+
+.cont-prod3 #id-img-prod-3 {
+    margin-left: 3px;
+    margin-top: 3px;
+    height: 70px;
+}
+
+.cont-prod4 #id-img-prod-4 {
+    margin-left: 3px;
+    margin-top: 3px;
+    height: 70px;
+}
+
+.productos-destacados .cont-prod1 .p-prod1 {
+    font-size: 0.6em;
+    margin-top: 5px;
+}
+
+.productos-destacados .cont-prod2 .p-prod2 {
+    font-size: 0.6em;
+    margin-top: 5px;
+}
+
+.productos-destacados .cont-prod3 .p-prod3 {
+    font-size: 0.6em;
+    margin-top: 5px;
+}
+
+.productos-destacados .cont-prod4 .p-prod4 {
+    font-size: 0.6em;
+    margin-top: 5px;
+}
+
+/*---NOTICIAS---*/
+
+#Listado__imgNot {
+    margin-top: 10px; 
+    margin-bottom: 0px;  
+}
+
+/*IMAGEN DE NOTICIA 1*/
+#id-not-1 {
+    height: 50%;
+    width: 100%;   
+}
+/*IMAGEN DE NOTICIA 2*/
+#id-not-2 {
+    height: 50%;
+    width: 100%
+}
+
+/*IMAGEN DE NOTICIA 3*/
+#id-not-3 {
+    height: 50%;
+    width: 100%
+}
+
+/*IMAGEN DE NOTICIA 4*/
+#id-not-4 {
+    height: 50%;
+    width: 100%
+}
+
+/*ESTILO DE HOVER SOBRE IMG DE NOTICIA*/
+
+body,
+.ul-noticias,
+figure {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.ul-noticias {
+    list-style: none;
+    display: flex;
+}
+
+.ul-noticias li {
+    width: 100%;
+}
+
+.ul-noticias li figure {
+    padding: 5px;
+    position: relative;
+}
+
+.ul-noticias li figure:hover figcaption {
+    display: block;
+    cursor: pointer;
+}
+
+.ul-noticias li figcaption {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, .7);
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.ul-noticias li a {
+    font: 10px/12px Verdana;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    
+}
+
+
+
+/* FOOTER */
+
+#id-footer {
+    margin-top: 80px;
+}
+
+.h3-footer {
+    font-size: 15px;
+    padding-left: 10px;
+} 
+
+.footer-container-links h4 {
+    font-size: 13px;
+}
+
+.footer-container-links ul li a {
+    font-size: 10px;
+}
+
+#id-menu-pie .span__container1 {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+#id-menu-pie .span__container {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.h5__derechos-desarrollo {
+    padding-left: 12%;
+    font-size: 0.5em;
+}
+
+.span__container1 {
+    margin-left: 8%;
+}
+
+.link__G2 {
+    font-size: 0.5em;
+}
+
+
+.link__G2:hover {
+    font-size: 0.6em;
+}
+
+
+}
+    

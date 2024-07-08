@@ -1,0 +1,195 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+#general {
+    background-color: #2a2a2a;
+}
+
+/* NAVBAR */
+
+.navbar__conf {
+    height: 60px;
+    background-color: #4f4f4f;
+}
+
+#pwd {
+    margin-top: 15px;
+}
+
+#email {
+    margin-left: 1050px;
+    margin-top: 15px;
+}
+
+#btn_submit {
+    float: inline-end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*MAIN*/
+
+.h3_title {
+    width: 100%;
+    color: #7ef240;
+    margin-left: 20px;
+}
+
+.h2_title {
+    color: #cdf869;
+    margin-left: 20px;
+}
+
+
+.form-control.d-flex-column {
+    background-color:transparent;
+    border-style: hidden;
+}
+
+.form-control label{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#category {
+    width: 100%;
+    height: 2em;
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+.rubro_menu {
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+#brand {
+    width: 100%;
+    height: 2em;
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+.marca_menu {
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+#detail {
+    width: 100%;
+    height: 2em;
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+#year {
+    width: 100%;
+    height: 2em;
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+#price {
+    width: 100%;
+    height: 2em;
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+#banner-form {
+    width: 100%;
+    height: 2em;
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+#btn_submit {
+    width: 8%;
+    height: 2em;
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: 500;
+    float: inline-end;
+    border-style: solid;
+    border-color: #7ef240;
+    border-radius: 25px;
+    background-color: #cdf869;
+}
+
+
+
+/*LISTADO DE PRODUCTOS*/
+
+#separator {
+    color: #ffffff;
+}
+
+.subtitle{
+    color: white;
+    font-size: 1.5vw;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    margin: 30px 0px;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #FFF;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+
+.table th,
+.table td {
+    padding: 8px; 
+    text-align: center;
+}
+.table th{
+    border-bottom: 1px solid #ffffff;
+}
+.table td{
+    border-bottom: 1px solid #4f4f4f;
+}
+
+#list-div-movies{
+    width: 100%;
+}
+
+.item-movie{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+h3{
+    align-self: center;
+}
+
+.pagedown {
+    height: 200px;
+}

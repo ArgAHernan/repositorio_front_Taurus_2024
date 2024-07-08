@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAURUS S.A. - Concesionario Agrícola</title>
+  <link rel="shortcut icon" href="/statics/Img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/estilo_contacto.css" type="text/css">
+  <script src="https://kit.fontawesome.com/c86e6b0455.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!--HEADER-->
+  <header id="id-header">
+    <section class="nav-section">
+      <div class="navbar">
+
+        <!--botones del menu desplegable - hover-->
+        <a href="/index.html" id="id-home">Home</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">Productos
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/Templates/productos-nuevos.html">Nuevos</a>
+            <a href="/Templates/productos-usados.html">Usados</a>
+            <a href="/Templates/productos-alquilar.html">Alquilar</a>
+          </div>
+        </div>
+
+        <div class="dropdown1">
+          <button class="dropbtn">Comprar
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown1-content">
+            <a href="/templates/productos_financiacion/financiacion.html">Financiación</a>
+            <a href="/templates/en-desarrollo/pag-en-desarrollo.html">Planes de Ahorro</a>
+            <a href="/templates/en-desarrollo/pag-en-desarrollo.html">Repuestos</a>
+            <a href="/templates/en-desarrollo/pag-en-desarrollo.html">Catálogos</a>
+          </div>
+        </div>
+
+        <div class="dropdown2">
+          <button class="dropbtn">Institucional
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown2-content">
+            <a href="/templates/Institucional/quienes-somos.html">Quiénes Somos</a>
+            <a href="/templates/Institucional/contactenos.html">Contáctenos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!--/HEADER-->
+  <!--*******************************************************************************-->
+
+  <div id="img-taurus">
+    <a href="/index.html"><img src="/statics/Img/logo-taurus-200x200-transparente.png" alt="Logo Taurus S.A."
+        class="img-taurus"></a>
+  </div>
+
+  <!--/HEADER-->
+  <!--MAIN-->
+
+  <div class="container__h1">
+    <h1 class="h1__class" style="padding-left: 40%;">Contactenos</h1>
+  </div>
+  <br><br><br><br><br><br><br> <!--borrar-->
+
+  <form class="body__form" action="" method="post">
+    <fieldset>
+      <legend>Contáctenos</legend>
+      <div class="form-group">
+        <label for="firstname">Nombre:</label>
+        <input size="50" type="text" name="firstname" placeholder=" Ingrese su nombre" class="input-field">
+      </div>
+      <div class="form-group">
+        <label for="lastname">Apellido:</label>
+        <input size="50" type="text" name="lastname" placeholder=" Ingrese su apellido" class="input-field">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input size="53" type="text" name="email" placeholder=" Ingrese su Email" class="input-field">
+      </div>
+      <div class="form-group">
+        <label for="tel">Teléfono:</label>
+        <input size="49" type="text" name="tel" placeholder=" Ingrese su número de teléfono" class="input-field">
+      </div>
+
+      <div class="form-group">
+        <label for="tel">Localidad:</label>
+        <input size="48" type="text" name="tel" placeholder=" Ingrese su localidad" class="input-field">
+      </div>
+      <div class="form-group">
+        <label for="options">Asunto de Consulta:</label>
+        <select name="options" placeholder="Seleccionar" class="input-field">
+          <option value="Seleccionar">Seleccionar</option>
+          <option value="Ventas">Ventas</option>
+          <option value="Posventas">Posventas</option>
+          <option value="Repuestos">Repuestos</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="Consulta">Consulta o mensaje:</label><br>
+        <textarea name="Consulta" cols="60" rows="5" class="input-field-textbox"></textarea>
+      </div>
+
+      <div class="radio_button">
+        <p><u>Quiero que me contacten:</u></p><br>
+        <input type="radio" id="asesor" name="fav_language" value="asesor">
+          <label for="asesor">Visita de Asesor</label>
+          <input type="radio" id="telefono" name="fav_language" value="telefono">
+          <label for="telefono">Llamado Telefónico</label>
+          <input type="radio" id="e-mail" name="fav_language" value="e-mail">
+          <label for="e-mail">Vía E-mail</label>
+      </div>
+
+      <div class="form-group-button">
+        <input style="font-weight: 600;" type="reset" value= "Cancelar" class="btn-reset">
+        <input style="font-weight: 600;" type="reset" value= "Enviar" class="btn-submit">
+      </div>
+    </fieldset>
+  </form>
+  <br>
+ 
+  <!--************************************************************************-->
+
+    <!--FOOTER-->
+    <footer id="id-footer">
+      <h3 class="h3-footer">TAURUS S.A - Concesionario Agrícola</h3>
+      <div class="footer-subtitle">
+          <h4>Ruta 9 - km. 555 - Villa María - Cba.</h4>
+          <h5>Tel.: (0353) 155100370</h5>
+      </div>
+      <div class="footer-container">
+          <div class="footer-row">
+              <div class="footer-container-links">
+                  <h4>Productos</h4>
+                  <ul>
+                      <li><a href="/templates/productos-nuevos.html">Nuevos</a></li>
+                      <li><a href="/templates/productos-usados.html">Usados</a></li>
+                      <li><a href="/templates/productos-alquilar.html">Alquiler</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-container-links">
+                  <h4>Comprar</h4>
+                  <ul>
+                      <li><a href="/templates/productos_financiacion/financiacion.html">Financiación</a></li>
+                      <li><a href="/templates/en-desarrollo/pag-en-desarrollo.html">Planes de Ahorro</a></li>
+                      <li><a href="/templates/en-desarrollo/pag-en-desarrollo.html">Repuestos</a></li>
+                      <li><a href="/templates/en-desarrollo/pag-en-desarrollo.html">Catálogos</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-container-links">
+                  <h4>Institucional</h4>
+                  <ul>
+                      <li><a href="/templates/Institucional/quienes-somos.html">Quiénes Somos</a></li>
+                      <li><a href="/templates/Institucional/contactenos.html">Contáctenos</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-container-links">
+                  <h4>Ayuda</h4>
+                  <ul>
+                      <li><a href="/templates/en-desarrollo/pag-en-desarrollo.html">Preguntas Frecuentes</a></li>
+                      <li><a href="/templates/sucursales/sucursales.html">Sucursales</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-container-links">
+                  <h4>Síguenos</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                      <a href="#"><i class="fab fa-tiktok"></i></a>
+                      <a href="#"><i class="fab fa-telegram"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Pie del Footer-->
+      <br>
+      <div class="footer__separator"></div>
+      <div id="id-menu-pie">
+          <a href="/templates/en-desarrollo/pag-en-desarrollo.html"><span class="span__container1">Política de Privacidad</span></a> 
+          <span class="span__separator">|</span>
+          <a href="/templates/en-desarrollo/pag-en-desarrollo.html"><span class="span__container">Términos de Uso</span></a>
+          <span class="span__separator">|</span>
+          <a href="/templates/en-desarrollo/pag-en-desarrollo.html"><span class="span__container">Política de Cookies</span></a>
+      </div>
+      
+      <div class="h5-footer">
+          <span>
+              <h5 class="h5__derechos-desarrollo">Todos los derechos reservados a Taurus S.A - Desarrollado por Grupo </h5>            
+              <a class="link__G2" style="text-decoration: none;" href="#">G2</a>
+          </span>
+      </div>
+  
+  </footer>
+  <!--/FOOTER-->
+
+
+</body>
+
+</html>
