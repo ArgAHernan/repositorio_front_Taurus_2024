@@ -1,6 +1,5 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(56, 55, 55);
 }
 
 * {
@@ -10,11 +9,18 @@ html {
     list-style: none;
 }
 
+ #body {
+    background-image: url(../statics/Img/background2.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
 .nav-div {
     position: sticky;
     width: 100%;
-    height: 80px;
-    background-color: rgb(199, 245, 92);
+    height: 100px;
+    background-color: #0eac36;
     top: 0;
     z-index: 99999;
 }
@@ -33,17 +39,199 @@ html {
 
 .nav-links #pop #reg {
     float: inline-end;
+    
 }
 
-#pop {
-    margin-right: 0px;
+.logo-text {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-left: 20px;
+    transition-property: font-size, text-shadow !important;
+    transition-duration: 1.5s !important;
+    transition-timing-function: center,ease-in-out !important;
+    text-align: center !important;
+
 }
+
+.logo-text:hover {
+    font-size: 1.5em;
+    color: #f1e20c !important;
+}
+
 
 #reg {
-    margin-right: 0px;    
+    position: relative;
+   color: #f1e20c;
+   display: inline;
+   float: right;
+   font-weight: 500;
+}
+
+#reg:hover {
+    color: #968d0a;
+}
+
+.btn-cac1 {
+    width: 150px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: #f1e20c;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    float: right;
+    font-weight: 500;
+}
+
+.btn-cac1:hover {
+    background-color: #968d0a;
+    color: antiquewhite;
 }
 
 #form {
     margin-top: 50px;
-    background-color: rgb(56, 55, 55);
+    background-color: transparent;
+    color: antiquewhite;
+}
+
+.form-control {
+    background-color: #0eac36 !important;
+    color: antiquewhite !important;
+    font-weight: 500 !important;
+    margin-left: 0;
+}
+
+.btn-cac {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #a29fa1;
+    color: antiquewhite;
+    border-radius: 15px;
+}
+
+.btn-cac:hover {
+    color: #0eac36;
+    background-color: #444;
+}
+
+.subtitle {
+    color: antiquewhite;
+}
+
+.tr1 th{
+    background-color: #0eac36 !important;
+    color: antiquewhite !important;
+    text-align: center;
+}
+
+/* FOOTER */
+
+#id-footer {
+    background-color: #525151;
+    padding: 30px 0;
+    margin-top: 30px;
+    
+}
+
+.h3-footer {
+    padding-top: 0px;
+    padding-left: 100px;
+    font-size: 20px;
+    font-weight: 500px;
+    color: #d2d6d3;
+    border-bottom: 5px solid #0eac36;
+    padding-bottom: 10px;
+    display: inline;
+}
+
+.footer-subtitle h4 {
+    font-size: 16px;
+    color: #d2d6d3;
+    margin-top: 20px;
+    padding-left: 100px;
+}
+
+.footer-subtitle h5 {
+    font-size: 16px;
+    color: #d2d6d3;
+    margin-top: 10px;
+    padding-left: 100px;
+    border-bottom: 2px solid #0eac36;
+    padding-bottom: 10px;
+    /*display: inline;*/
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#id-menu-pie {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #0eac36;
+}
+
+.span__container {
+    position: relative;
+    display: inline-block;
+    padding-left: 0px;
+    padding-top: 20px;
+    font-size: 0.7em;
+    color: #c7c7c7;
+}
+
+.span__container:hover {
+    font-size: 0.7em;
+    font-weight: 500;
+    color: #0eac36;
+}
+
+.span__container1 {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 100px;
+    padding-top: 20px;
+    font-size: 0.7em;
+    color: #c7c7c7;
+}
+
+.span__container1:hover {
+    font-size: 0.7em;
+    font-weight: 500;
+    color: #0eac36;
+}
+
+.span__separator {
+    color: #c7c7c7;
+}
+
+.h5__derechos-desarrollo {
+    font-size: 0.7em;
+    color: #c7c7c7;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    font-weight: 50;
+    text-align: center !important;
+    padding-top: 0.6em;
+    position: relative;
+    display: inline-block;
+    padding-left: 550px;
+    
+}
+
+.link__G2 {
+    text-decoration: none;
+    color: #c7c7c7;
+    font-size: 0.7em;
+    align-items: center;
+}
+
+.link__G2:hover {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #0eac36;
 }

@@ -11,7 +11,8 @@
 </head>
 
 <!-- Agregamos CCS en linea -->
-<body >
+
+<body id="body">
     <!-- Agregar comentario -->
     <!-- INDICAR LA CABECERA -->
     <header class="header">
@@ -19,38 +20,37 @@
         <nav class="nav-div">
             <!-- para realizar divisiones de contenido -->
             <div id="logo">
-                <a href="">
-                    <i class="fas fa-film"></i>
-                    <span class="logo-text">
-                        TAURUS S.A. - Concesionario Agrícola -
-                    </span>
-                </a>
+                <span class="logo-text">
+                    TAURUS S.A. - Concesionario Agrícola -
+                </span>
+
+
+                <ul class="nav-links">
+
+                    <li>
+                        <!-- etiqueta enlace interno al proyecto -->
+                        <a id="reg" href="#">Registrarse</a>
+                    </li>
+                    <li>
+                        <!-- Enlace externo -->
+                        <a href="#" target="_blank" class="btn-cac1">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="login-text">
+                                Iniciar sesión
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                
-                <li>
-                    <!-- etiqueta enlace interno al proyecto -->
-                    <a id="reg" href="./register.html">Registrarse</a>
-                </li>
-                <li>
-                    <!-- Enlace externo -->
-                    <a href="#" target="_blank" class="btn-cac">
-                        <i class="fas fa-sign-in-alt"></i>
-                        <span class="login-text">
-                            Iniciar sesión
-                        </span>
-                    </a>
-                </li>
-            </ul>
         </nav>
 
     </header>
     <!-- Indicar contenido principal de la pagina -->
-    <main> 
+    <main>
         <section id="form" class="container ">
             <h2 class="search-title">Gestión de Productos</h2>
-            <p class="description" >En esta sección se podra llevar a cabo la gestión de los Productos</p>
-            <form action="#"  id="form_producto">
+            <p class="description">En esta sección se podra llevar a cabo la gestión de los Productos</p>
+            <form action="#" id="form_producto">
                 <div class="d-flex">
                     <div class="form-control d-flex-column">
                         <label for="brand">Marca</label>
@@ -66,22 +66,26 @@
                     </div>
                     <div class="form-control d-flex-column">
                         <label for="release-date">Fecha</label>
-                        <input type="date" class="input-search" name="release_date" id="release-date" placeholder="yyyy-mm-dd" pattern="\d{4}-\d{2}-\d{2}>
+                        <input type="date" class="input-search" name="release_date" id="release-date">
                     </div>
                     <div class="form-control d-flex-column">
                         <label for="banner">Banner</label>
                         <input type="url" class="input-search" name="banner" id="banner">
-                    </div>                
-                    <input type="hidden"  name="id" id="maquinaria_id">
+                    </div>
+                    <input type="hidden" name="id" id="maquinaria_id">
                     <button class="btn-cac" type="button" id="btn-save-productos">Agregar</button>
                 </div>
-            </form> 
+            </form>
         </section>
+        <br>
+        <br>
+        <br>
+
         <section id="list" class="container">
-            <h3 class="subtitle">Listado de peliculas</h3>
+            <h3 class="subtitle">Listado de Maquinaria</h3>
             <table id="list-table-productos" class="table">
                 <thead>
-                    <tr>
+                    <tr class="tr1">
                         <th>Marca</th>
                         <th>Nombre del Producto</th>
                         <th>Modelo</th>
@@ -91,27 +95,55 @@
                 </thead>
                 <tbody id="tbody-table-productos"></tbody>
             </table>
-        </section>  
+        </section>
     </main>
     <!-- Indicar el pie de página -->
-    <footer id="footer">
-        <a href="">Términos y condiciones</a>
-        <a href="">Preguntas Frecuentes</a>
-        <a href="">Ayuda</a>
-        <a href="./crud-taurus.html">CRUD</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--FOOTER-->
+    <footer id="id-footer">
+        <h3 class="h3-footer">TAURUS S.A - Concesionario Agrícola</h3>
+        <div class="footer-subtitle">
+            <h4>Ruta 9 - km. 555 - Villa María - Cba.</h4>
+            <h5>Tel.: (0353) 155100370</h5>
+        </div>
+
+        <!-- Pie del Footer-->
+        <br>
+        <div class="footer__separator"></div>
+        <div id="id-menu-pie">
+            <a href="/templates/en-desarrollo/pag-en-desarrollo.html"><span class="span__container1">Política de
+                    Privacidad</span></a>
+            <span class="span__separator">|</span>
+            <a href="/templates/en-desarrollo/pag-en-desarrollo.html"><span class="span__container">Términos de
+                    Uso</span></a>
+            <span class="span__separator">|</span>
+            <a href="/templates/en-desarrollo/pag-en-desarrollo.html"><span class="span__container">Política de
+                    Cookies</span></a>
+            <span class="span__separator">|</span>
+            <a href="crud_taurus.html"><span class="span__container">Crud</span></a>
+
+        </div>
+
+        <div class="h5-footer">
+            <span>
+                <h5 class="h5__derechos-desarrollo">Todos los derechos reservados a Taurus S.A - Desarrollado por Grupo
+                </h5>
+                <a class="link__G2" style="text-decoration: none;" href="#">G2</a>
+            </span>
+        </div>
+
     </footer>
-
+    <!--/FOOTER-->
+   
     <!-- INTERNO AL DOCUMENTO -->
-    <script>
-        // alert('Hola mundo JS C#24162 😎');
-        // console.log('Hola por medio de la consola 😀');
-    </script>
-
-    <!-- REFERENCIA EXTERNA -->
-    <!-- <script src="./static/js/index.js"></script> -->
-    <!-- <script src="./static/js/funciones.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
+    <!-- REFERENCIA EXTERNA -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="../statics/js/crud_taurus_fetch.js" defer></script>
 
 </body>
