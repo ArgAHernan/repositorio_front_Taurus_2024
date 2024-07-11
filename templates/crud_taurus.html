@@ -16,24 +16,21 @@
     <!-- INDICAR LA CABECERA -->
     <header class="header">
         <!-- indica que un menu de navegacion -->
-        <nav>
+        <nav class="nav-div">
             <!-- para realizar divisiones de contenido -->
             <div id="logo">
                 <a href="">
                     <i class="fas fa-film"></i>
                     <span class="logo-text">
-                        CAC MOVIES
+                        TAURUS S.A. - Concesionario Agrícola -
                     </span>
                 </a>
             </div>
             <ul class="nav-links">
-                <li>
-                    <!-- etiqueta enlace - enlace interno al documento html -->
-                    <a href="#popular" >Tendencias</a>
-                </li>
+                
                 <li>
                     <!-- etiqueta enlace interno al proyecto -->
-                    <a href="./register.html">Registrarse</a>
+                    <a id="reg" href="./register.html">Registrarse</a>
                 </li>
                 <li>
                     <!-- Enlace externo -->
@@ -53,7 +50,7 @@
         <section id="form" class="container ">
             <h2 class="search-title">Gestión de Productos</h2>
             <p class="description" >En esta sección se podra llevar a cabo la gestión de los Productos</p>
-            <form action="#"  id="form_back">
+            <form action="#"  id="form_producto">
                 <div class="d-flex">
                     <div class="form-control d-flex-column">
                         <label for="brand">Marca</label>
@@ -69,14 +66,14 @@
                     </div>
                     <div class="form-control d-flex-column">
                         <label for="release-date">Fecha</label>
-                        <input type="date" class="input-search" name="release_date" id="release-date">
+                        <input type="date" class="input-search" name="release_date" id="release-date" placeholder="yyyy-mm-dd" pattern="\d{4}-\d{2}-\d{2}>
                     </div>
                     <div class="form-control d-flex-column">
                         <label for="banner">Banner</label>
                         <input type="url" class="input-search" name="banner" id="banner">
                     </div>                
                     <input type="hidden"  name="id" id="maquinaria_id">
-                    <button class="btn-cac" type="button" id="btn-save-producto">Agregar</button>
+                    <button class="btn-cac" type="button" id="btn-save-productos">Agregar</button>
                 </div>
             </form> 
         </section>
@@ -92,9 +89,7 @@
                         <th>Banner</th>
                     </tr>
                 </thead>
-                <tbody id="tbody-table-productos">
-                    
-                </tbody>
+                <tbody id="tbody-table-productos"></tbody>
             </table>
         </section>  
     </main>
@@ -116,7 +111,8 @@
     <!-- <script src="./static/js/index.js"></script> -->
     <!-- <script src="./static/js/funciones.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../statics/js/crud_taurus_fetch.js"></script>
+    
+    <script src="../statics/js/crud_taurus_fetch.js" defer></script>
 
 </body>
 

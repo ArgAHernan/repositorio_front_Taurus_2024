@@ -1,5 +1,6 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(56, 55, 55);
 }
 
 * {
@@ -9,187 +10,40 @@ html {
     list-style: none;
 }
 
-#general {
-    background-color: #2a2a2a;
-}
-
-/* NAVBAR */
-
-.navbar__conf {
-    height: 60px;
-    background-color: #4f4f4f;
-}
-
-#pwd {
-    margin-top: 15px;
-}
-
-#email {
-    margin-left: 1050px;
-    margin-top: 15px;
-}
-
-#btn_submit {
-    float: inline-end;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-/*MAIN*/
-
-.h3_title {
+.nav-div {
+    position: sticky;
     width: 100%;
-    color: #7ef240;
-    margin-left: 20px;
+    height: 80px;
+    background-color: rgb(199, 245, 92);
+    top: 0;
+    z-index: 99999;
 }
 
-.h2_title {
-    color: #cdf869;
-    margin-left: 20px;
-}
-
-
-.form-control.d-flex-column {
-    background-color:transparent;
-    border-style: hidden;
-}
-
-.form-control label{
-    color: #ffffff;
-    font-size: 24px;
-}
-
-#category {
-    width: 100%;
-    height: 2em;
-    font-size: 1em;
-    font-family: Arial;
-    font-weight: 600;
-}
-
-.rubro_menu {
-    font-size: 1em;
-    font-family: Arial;
-    font-weight: 600;
-}
-
-#brand {
-    width: 100%;
-    height: 2em;
-    font-size: 1em;
-    font-family: Arial;
-    font-weight: 600;
-}
-
-.marca_menu {
-    font-size: 1em;
-    font-family: Arial;
-    font-weight: 600;
-}
-
-#detail {
-    width: 100%;
-    height: 2em;
-    font-size: 1em;
-    font-family: Arial;
-    font-weight: 600;
-}
-
-#year {
-    width: 100%;
-    height: 2em;
-    font-size: 1em;
-    font-family: Arial;
-    font-weight: 600;
-}
-
-#price {
-    width: 100%;
-    height: 2em;
-    font-size: 1em;
-    font-family: Arial;
-    font-weight: 600;
-}
-
-#banner-form {
-    width: 100%;
-    height: 2em;
-    font-size: 1em;
-    font-family: Arial;
-    font-weight: 600;
-}
-
-#btn_submit {
-    width: 8%;
-    height: 2em;
-    font-size: 1em;
-    font-family: Arial;
-    font-weight: 500;
-    float: inline-end;
-    border-style: solid;
-    border-color: #7ef240;
-    border-radius: 25px;
-    background-color: #cdf869;
-}
-
-
-
-/*LISTADO DE PRODUCTOS*/
-
-#separator {
-    color: #ffffff;
-}
-
-.subtitle{
-    color: white;
-    font-size: 1.5vw;
-}
-
-#list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.table {
-    margin: 30px 0px;
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #FFF;
-    vertical-align: top;
-    border-color: #dee2e6;
-}
-
-.table th,
-.table td {
-    padding: 8px; 
+.nav-links {
+    position: relative;
+    height: 30px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
     text-align: center;
-}
-.table th{
-    border-bottom: 1px solid #ffffff;
-}
-.table td{
-    border-bottom: 1px solid #4f4f4f;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 10px;
+    
 }
 
-#list-div-movies{
-    width: 100%;
+.nav-links #pop #reg {
+    float: inline-end;
 }
 
-.item-movie{
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0px;
+#pop {
+    margin-right: 0px;
 }
 
-h3{
-    align-self: center;
+#reg {
+    margin-right: 0px;    
 }
 
-.pagedown {
-    height: 200px;
+#form {
+    margin-top: 50px;
+    background-color: rgb(56, 55, 55);
 }

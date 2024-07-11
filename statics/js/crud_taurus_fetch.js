@@ -26,27 +26,32 @@ async function fetchData(url, method, data = null) {
     }
   }
   
-  async function showProductos(){
-    let productos =  await fetchData(BASEURL+'/productos/', 'GET');
-    const tableProductos = document.querySelector('#list-table-productos tbody');
-    tableProductos.innerHTML='';
-    productos.forEach((producto, index) => {
-      let tr = `<tr>
+  async function showProductos() {
+    try {
+        let productos = await fetchData(`${BASEURL}/productos/`, 'GET');
+        const tableProductos = document.querySelector('#list-table-productos tbody');
+        tableProductos.innerHTML = '';
+        productos.forEach((producto) => {
+            let tr = `
+                <tr>
                     <td>${producto.brand}</td>
                     <td>${producto.name}</td>
                     <td>${producto.model}</td>
-                    <td>${producto.release_data}</td>
+                    <td>${producto.release_date}</td>
                     <td>
-                        <img src="${producto.banner}" width="30%">
+                        <img src="${producto.banner}" width="100">
                     </td>
                     <td>
-                        <button class="btn-cac" onclick='updateProducto(${producto.maquinaria_id})'><i class="fa fa-pencil" ></button></i>
-                        <button class="btn-cac" onclick='deleteProducto(${producto.maquinaria_id})'><i class="fa fa-trash" ></button></i>
+                        <button class="btn btn-primary btn-sm" onclick='updateProducto(${producto.maquinaria_id})'>Editar</button>
+                        <button class="btn btn-danger btn-sm" onclick='deleteProducto(${producto.maquinaria_id})'>Eliminar</button>
                     </td>
-                  </tr>`;
-      tableProductos.insertAdjacentHTML("beforeend",tr);
-    });
-  }
+                </tr>`;
+            tableProductos.insertAdjacentHTML('beforeend', tr);
+        });
+    } catch (error) {
+        console.error('Error al cargar productos:', error);
+    }
+}
 
 
   /**
@@ -55,11 +60,11 @@ async function fetchData(url, method, data = null) {
    * @returns 
    */
   async function saveProducto(){
-    const maquinaria_id = document.querySelector('#maquinaria_id').value;
+    const Maquinaria_Id = document.querySelector('#maquinaria_id').value;
     const brand = document.querySelector('#brand').value;
     const name = document.querySelector('#name').value;
     const model = document.querySelector('#model').value;
-    const releaseDate = document.querySelector('#releaseDate').value;
+    const releaseDate = document.querySelector('#release-date').value;
     const banner = document.querySelector('#banner').value;
 
 
@@ -78,21 +83,21 @@ async function fetchData(url, method, data = null) {
         brand: brand,
         name: name,
         model: model,
-        release_data: releaseDate,
+        release_date: releaseDate,
         banner: banner,
     };
   
       
     let result = null;
     // Si hay un maquinaria_id, realiza una petición PUT para actualizar el producto existente
-    if(maquinaria_id!==""){
-      result = await fetchData(`${BASEURL}productos/${maquinaria_id}`, 'PUT', productoData);
+    if(Maquinaria_Id!==""){
+      result = await fetchData(`${BASEURL}/productos/${Maquinaria_Id}`, 'PUT', productoData);
     }else{
       // Si no hay maquinaria_id, realiza una petición POST para crear un nuevo producto
       result = await fetchData(`${BASEURL}/productos/`, 'POST', productoData);
     }
     
-    const formBack = document.querySelector('#form_back');
+    const formBack = document.querySelector('#form_producto');
     formBack.reset();
     Swal.fire({
       title: 'Exito!',
@@ -132,26 +137,38 @@ async function fetchData(url, method, data = null) {
   async function updateProducto(id){
     //Buscamos en el servidor la pelicula de acuerdo al id
     let response = await fetchData(`${BASEURL}/productos/${id}`, 'GET');
-    const maquinaria_id = document.querySelector('#maquinaria_id').value;
+    const Maquinaria_Id = document.querySelector('#maquinaria_id').value;
     const brand = document.querySelector('#brand').value;
     const name = document.querySelector('#name').value;
     const model = document.querySelector('#model').value;
     const releaseDate = document.querySelector('#release-date').value;
     const banner = document.querySelector('#banner').value;
     
-    maquinaria_id.value = response.maquinaria_id;
+    Maquinaria_Id.value = response.maquinaria_id;
     brand.value = response.brand;
     name.value = response.name;
     model.value = response.model;
-    releaseDate.value = response.release_data;
+    releaseDate.value = response.release_date;
     banner.value = response.banner;
   }
     
   // Escuchar el evento 'DOMContentLoaded' que se dispara cuando el 
   // contenido del DOM ha sido completamente cargado y parseado.
-  document.addEventListener('DOMContentLoaded',function(){
+ 
+  document.addEventListener('DOMContentLoaded', function(){
+    const btnSaveProductos = document.querySelector('#btn-save-productos');
+    // Asociar una función al evento click del botón
+    btnSaveProductos.addEventListener('click', saveProducto);
+
+    // Mostrar productos al cargar la página
+    showProductos();
+});
+ 
+ 
+ 
+ /* document.addEventListener('DOMContentLoaded',function(){
     const btnSaveProducto = document.querySelector('#btn-save-producto');
     //ASOCIAR UNA FUNCION AL EVENTO CLICK DEL BOTON
     btnSaveProducto.addEventListener('click',saveProducto);
     showProductos();
-  });
+  });*/
